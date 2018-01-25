@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Case 8192</title>
+
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="js/materialize.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <script>
+  function signIn() {
+    $("#header").html('<b>Signing In With US:ID</b>');
+    $("#header").attr('style', 'color: #4C0000');
+    $("#tag").html("This will take a second or so.");
+    $("#btn").hide();
+    $("#loader").show();
+
+    setTimeout(function(){
+        window.location.assign("evidence-secure-46-49-4e-44-20-54-48-45-20-4d-45-41-4e-49-4e-47.html");
+    }, 3000);
+  }
+  </script>
+
+</head>
+
+<nav style="background-color: #00004C">
+   <div class="nav-wrapper" style="padding-left: 30px" id="mnu">
+     <div class="col s12">
+       <a class="breadcrumb">Federal Cases</a>
+       <a class="breadcrumb" style="color: #fff">Case 8192</a>
+     </div>
+   </div>
+ </nav>
+
+<body style=" background-color: #ddd">
+    <div class="container">
+      <div class="row valign-wrapper">
+          <div style="padding: 50px;">
+              <h1 style="color: #000" id="header" style="font-family: 'Bitter', serif;"><b>Case 8192</b></h1>
+              <p style="color: #000" id="tag" style="font-family: 'Arvo', serif;">Sign in to review content made available to you as a jury member of this trial.</p>
+
+              <a class="waves-effect waves-light btn" style="background-color: #000; color: #fff" id="btn" onclick="signIn()">Sign In</a>
+
+              <div id="loader" class="progress" style="background-color: #111">
+                <div class="indeterminate" style="background-color: #fff">
+                </div>
+              </div>
+
+              <script>
+                  $("#loader").hide();
+              </script>
+            </div>
+          </div>
+        </div>
+</body>
+
+<style>
+.container  {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container .row {
+  margin: 0 auto;
+}
+</style>
+
+</html>
